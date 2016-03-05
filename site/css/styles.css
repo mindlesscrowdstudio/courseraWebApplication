@@ -4,6 +4,9 @@
 	padding:0;
 	box-sizing:border-box;
 }
+html{
+	font-family: 'Work Sans','sans-serif';
+}
 .row{
 	width: 100%;
 }
@@ -18,6 +21,7 @@ header {
 h1{
 	text-align: center;
 	font-size: 1.1em;
+	font-weight: 400;
 }
 a:hover div:nth-child(5) {  
   font-size: 24px;
@@ -27,11 +31,13 @@ a:hover div:nth-child(5) {
 
 section{
 	position: relative;
+	font-weight: 300;
+	background-color:rgba(61, 200, 209, 0.18);
 }
 
 section h2{
-	border-bottom: 2px solid black;
-	border-left: 2px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
 	top:0;
 	right: 0;
 	text-align: center;
@@ -57,23 +63,24 @@ section p{
 	color:white;
 	background-color: #0bd7e3;
 }
-
+.wrapper{
+	 margin: 1em;
+    border: 1px solid black;
+}
 /******Media queries******/
 /*medium and large devices*/
 @media(min-width: 992px){
  .lg-4{
  	width: 33.33%;
- 	border:1px solid orange;
  	float: left;
  }
- 	.wrapper{
-	background-color: red;
-	}
+ 	/*.wrapper{}*/
+	
+	
 }
 /*tablet 768px and 991px*/
 @media(min-width: 768px) and (max-width: 991px){
 	.md-6, .md-12{
-		border: 1px solid aqua;
 		float: left;
 	}
 	.md-6{
@@ -87,7 +94,6 @@ section p{
 /*mobile equal to or less than 767px.*/
 @media(min-width: 300px) and (max-width: 767px){
 	.sm-12{
-		border: 1px solid green;
 		width: 100%;
 		float: left;
 	}
