@@ -1,0 +1,94 @@
+*{
+	font-size: 100%;
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+}
+.row{
+	width: 100%;
+}
+.left{
+	float: left;
+}
+
+header {
+	margin: 0px auto;
+	padding: 1em;
+}
+h1{
+	text-align: center;
+	font-size: 1.1em;
+}
+a:hover div:nth-child(5) {  
+  font-size: 24px;
+    color:aqua;
+}
+
+
+section{
+	position: relative;
+}
+
+section h2{
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	top:0;
+	right: 0;
+	text-align: center;
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+	position: absolute;
+}
+section p{
+	padding: 0.5em;
+	line-height: 1.5;
+	display: block;
+	margin-top: 2em;
+}
+ #chicken{
+	color:#393939;
+	background-color: pink;
+}
+#beef{
+	 color:white;
+	 background-color:#1491cc; 
+}
+#sushi{
+	color:white;
+	background-color: #0bd7e3;
+}
+
+/******Media queries******/
+/*medium and large devices*/
+@media(min-width: 992px){
+ .lg-4{
+ 	width: 33.33%;
+ 	border:1px solid orange;
+ 	float: left;
+ }
+ 	.wrapper{
+	background-color: red;
+	}
+}
+/*tablet 768px and 991px*/
+@media(min-width: 768px) and (max-width: 991px){
+	.md-6, .md-12{
+		border: 1px solid aqua;
+		float: left;
+	}
+	.md-6{
+		width:50%;
+	}
+	.md-12{
+		width: 100%;
+	}
+}
+
+/*mobile equal to or less than 767px.*/
+@media(min-width: 300px) and (max-width: 767px){
+	.sm-12{
+		border: 1px solid green;
+		width: 100%;
+		float: left;
+	}
+}
